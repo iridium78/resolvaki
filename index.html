@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Resolvaki</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+  </head>
+  <style>
+  body{
+    background-color:#f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+  }
+  main{
+
+  }
+  .container-fluid{
+    border:1px red solid;
+    height:100vh
+  }
+  main{
+
+  }
+  #all{
+    width:100%;
+  }
+
+  #menu{
+    background-color:#ff7024;
+    border-radius:14px;
+    color:#fff;
+    padding:18px;
+    height:98vh;
+
+  }
+
+  #content{
+    height:98vh;
+    padding:20px;
+  }
+
+  .top_content .bot_hamburguer{
+    float:left;
+    width:30px;
+  }
+
+  /*.top_content .input-group{
+    float:right;
+    width:85%;
+  }
+
+  .top_content .btn-outline-secondary{
+\
+    border:none;
+  }
+
+  .top_content input[type=text]{
+    border:none;
+    background: transparent;
+    font-size:14px;
+    padding:0;
+  }
+
+  .top_content .input-group{
+    background-color:#eeeeee;
+    padding:8px;
+    border-radius:1px;
+    font-size:11px;
+  }*/
+  </style>
+  <body>
+    <main>
+      <div class="container-fluid px-4 py-2">
+        <div class="row gx-1">
+          <div  class="col-2" id="menu">
+
+          </div>
+          <div class="col-10" id="content">
+            <div class="top_content">
+              <div class="row">
+                <div class="col-3">
+                  <button class="bot_hamburguer"><i class="fa fa-bars"></i></button>
+                  <div class="inner-addon left-addon">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control" />
+                  </div>
+
+                </div>
+                <div class="col-9" style="text-align:right">
+                  <button><i class="fa fa-bell"></i></button>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(".bot_hamburguer").click(function(){
+    if($("#menu").is(':visible')){
+      $("#menu").removeClass('col-2').hide();
+      $("#content").addClass('col-12').removeClass('col-10');
+    }
+    else{
+      $("#menu").addClass('col-2').show();
+      $("#content").addClass('col-10').removeClass('col-12');
+    }
+  })
+  </script>
+</html>
