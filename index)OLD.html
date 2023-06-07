@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Resolvaki</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
+  </head>
+  <style>
+  body{
+    background-color:#f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+  }
+  main{
+
+  }
+  .container-fluid{
+    height:100vh
+  }
+
+  main{
+
+  }
+
+  #menu{
+    background-color:#ff7024;
+    border-radius:14px;
+    color:#fff;
+    padding:18px;
+    height:98vh;
+  }
+
+  .inicial span{
+    background-color:#fff;
+    border-radius:60px;
+    font-size:22px;
+    font-weight: 800;
+    text-align:center;
+    color:#016fff;
+    padding-top:14px;
+    display:block;
+    width:60px;
+    height:60px;
+  }
+
+  #menu .opcoes{
+    text-align: right
+  }
+
+  #menu .opcoes button{
+    margin-left:7px
+  }
+
+  #menu .cliente{
+    font-size:18px;
+    margin-top:20px;
+  }
+
+  #menu nav{
+    margin-top:8vh;
+  }
+
+  #menu nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+
+  #menu nav ul li{
+    padding:1.4vh;
+    border-radius:10px;
+    margin-bottom:1vh;
+  }
+
+  #menu nav ul >li:hover{
+    background-color: #003698;
+    cursor:pointer
+  }
+
+  #menu nav ul li a{
+    font-size:1vw;
+    color:#fff
+  }
+
+  #menu nav ul li a i{
+    font-size:0.9vw;
+    margin-right:20px;
+  }
+
+  #menu .btn_menu{
+      width:41px;
+      height:41px;
+      border:0;
+      border-radius:10px;
+      background-color: #003698;
+      color:#fff;
+      font-size:21px;
+      margin-top:10px;
+  }
+
+  #top_content .input-group{
+    float:left;
+    width:70%;
+  }
+
+  #top_content .input-group input{
+    border:1px #e7e7e7 solid;
+    border-radius:7px!important;
+    font-size:13px;
+    height:49px;
+    background-color:#eeeeee;
+    color:#626262;
+    margin-left:10px;
+  }
+
+  #top_content .input-group i{
+    color:#016fff;
+    font-size:12px
+  }
+
+  #top_content .input-group input::placeholder {
+    color:#cdcdcd;
+  }
+
+  #top_content .bot_hamburguer{
+    float:left;
+    width:30px;
+    font-size:30px;
+    color:#016fff;
+    border:none;
+    background:transparent;
+  }
+
+  #top_content .avisos span{
+    background-color:#fff;
+    border-radius:60px;
+    font-size:22px;
+    font-weight: 800;
+    text-align:center;
+    color:#000;
+    padding-top:6px;
+    width:50px;
+    height:50px;
+    display:block;
+    float:right;
+  }
+
+  .avisos .fa{
+   color: transparent;
+   font-size:16px;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #000;
+  }
+
+
+  #content{
+    height:98vh;
+    padding:20px;
+  }
+
+  #main_content{
+    background-color:#fff;
+    border-radius:10px;
+    min-height:90vh;
+    padding:20px;
+    width:97%;
+    margin-left:2vw;
+  }
+
+  #logo{
+    margin-top:20vh;
+    text-align: center;
+  }
+
+  #logo img{
+    width:auto;
+  }
+
+  .headers{
+    padding:35px;
+    width:100%
+  }
+
+  .headers h2{
+    font-size:18px;
+    font-weight:bold;
+    color:#000b2e;
+  }
+
+  .headers h3{
+    font-size:16px;
+    color:#626262;
+    margin-top:21px;
+  }
+
+  .timeline{
+    background:url('util/img/timeline_vertical.png') repeat-y center top;
+    min-height:70vh
+  }
+
+  .timeline .tl_date{
+    width:60px;
+    height:60px;
+    padding:10px;
+    padding-top:5px;
+    margin:auto;
+    background-color: #ff7024;
+    border-radius:60px;
+    font-weight: 800;
+    color:#fff;
+    line-height:15px;
+    font-size:15px;
+    text-align:center;
+  }
+
+  .timeline .tl_item {
+    border:1px #8abcff solid;
+    width:46%;
+    margin-top:20px;
+    border-radius:13px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    margin-left:20px;
+    padding:20px;
+    border-top-right-radius: 0!important;
+    font-size:12px
+  }
+
+  .timeline .tl_item span{
+    color:#7c7c7c;
+  }
+
+  .timeline .right{
+    border-top-left-radius: 0!important;
+    margin-left:53%
+  }
+
+  .timeline #tl_paging{
+    margin:0!important;
+    padding:0!important;
+    width:294px;
+  }
+
+  .timeline #tl_paging div,.timeline #tl_paging div a{
+    text-align:center;
+    color:#058afd;
+    font-size:15px;
+  }
+
+  .timeline #tl_paging a{
+    min-width:45px;
+    padding:10px;
+    font-weight:bolder;
+    background-color:#f2f2f2;
+    border-radius:10px;
+    display:block;
+  }
+
+  .timeline #tl_paging .col-6{
+    padding-top:11px;
+  }
+
+  </style>
+  <body>
+    <main>
+      <div class="container-fluid px-4 py-2">
+        <div class="row gx-1">
+          <div  class="col-2" id="menu">
+            <div class="row opcoes">
+              <div class="col-4">
+                <div class="inicial"><span>E</span></div>
+              </div>
+              <div class="col-8">
+                <button class="btn_menu"><i class="fas fa-ellipsis-h"></i></button>
+                <button class="btn_menu"><i class="fas fa-right-from-bracket"></i></button>
+              </div>
+            </div>
+            <div class="row cliente">
+              <div class="col-12">Edigar Miguel</div>
+            </div>
+
+            <div class="row">
+              <nav class="col-12">
+                <ul>
+                  <li><a href="#"><i class="fas fa-globe"></i>Início</a></li>
+                  <li><a href="#"><i class="fas fa-paper-plane"></i>Campanhas</a></li>
+                  <li><a href="#"><i class="fas fa-timeline"></i>Linha do Tempo</a></li>
+                  <li><a href="#"><i class="fas fa-list"></i>Listas</a></li>
+                  <li><a href="#"><i class="fas fa-cog"></i>Configurações</a></li>
+                  <li><a href="#"><i class="fas fa-cube"></i>Módulos</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-12" id="logo">
+                <img src="util/img/logo.png">
+              </div>
+            </div>
+          </div>
+          <div class="col-10" id="content">
+            <div id="top_content" class="row">
+              <div class="col-4">
+                <button class="bot_hamburguer"><i class="fa fa-bars"></i></button>
+                <div class="input-group">
+                    <input class="form-control py-2 rounded-pill mr-1 pr-5" type="text" placeholder="O que você procura?" id="example-search-input">
+                    <span class="input-group-append">
+                        <button class="btn rounded-pill border-0 ml-n5" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col-8 text-right avisos">
+                <span><i class="fa fa-bell"></i></span>
+              </div>
+            </div>
+
+            <div class="headers">
+              <h2>Linha do tempo</h2>
+              <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <h3>
+            </div>
+            <div id="main_content">
+              <!--START OF TIMELINE CONTENT-->
+              <div class="timeline">
+                <div class="row">
+                  <div class="row" id="tl_paging">
+                    <div class="col-3"><a href="#"><i class="fa fa-chevron-left"></i></a></div>
+                    <div class="col-6">Dezembro 2023</div>
+                    <div class="col-3"><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+                  </div>
+                </div>
+                <!--TIMELINE DATE-->
+                <div class="tl_date">6<br>JUN<BR>23</div>
+                <!--TIMELINE ITEM-->
+                <div class="tl_item">
+                  <div class="row tl_block">
+                    <div class="col-5"><strong>147601741</strong> - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="col-7">
+                      <div class="row">
+                        <div class="col-6">Início: <span class="grey">22/11/22</span></div>
+                        <div class="col-6">Final: <span class="grey">22/11/22</span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-7 grey">857 contatos</div>
+                        <div class="col-5"><a href="#">5 Gatilhos</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--TIMELINE ITEM-->
+                <div class="tl_item">
+                  <div class="row tl_block">
+                    <div class="col-5"><strong>147601741</strong> - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="col-7">
+                      <div class="row">
+                        <div class="col-6">Início: <span class="grey">22/11/22</span></div>
+                        <div class="col-6">Final: <span class="grey">22/11/22</span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-7 grey">857 contatos</div>
+                        <div class="col-5"><a href="#">5 Gatilhos</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--TIMELINE ITEM-->
+                <div class="tl_item">
+                  <div class="row tl_block">
+                    <div class="col-5"><strong>147601741</strong> - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="col-7">
+                      <div class="row">
+                        <div class="col-6">Início: <span class="grey">22/11/22</span></div>
+                        <div class="col-6">Final: <span class="grey">22/11/22</span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-7 grey">857 contatos</div>
+                        <div class="col-5"><a href="#">5 Gatilhos</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--TIMELINE DATE-->
+                <div class="tl_date">10<br>JUN<BR>23</div>
+                <!--TIMELINE ITEM-->
+                <!--ON EACH DATE, ADD (OR REMOVE) THE right CLASS BELLOW-->
+                <div class="tl_item right">
+                  <div class="row tl_block">
+                    <div class="col-5"><strong>147601741</strong> - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                    <div class="col-7">
+                      <div class="row">
+                        <div class="col-6">Início: <span class="grey">22/11/22</span></div>
+                        <div class="col-6">Final: <span class="grey">22/11/22</span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-7 grey">857 contatos</div>
+                        <div class="col-5"><a href="#">5 Gatilhos</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TIMELINE CONTENT-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(".bot_hamburguer").click(function(){
+    if($("#menu").is(':visible')){
+      $("#menu").removeClass('col-2').hide();
+      $("#content").addClass('col-12').removeClass('col-10');
+    }
+    else{
+      $("#menu").addClass('col-2').show();
+      $("#content").addClass('col-10').removeClass('col-12');
+    }
+  })
+  </script>
+</html>
