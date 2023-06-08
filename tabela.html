@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Resolvaki</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
+    <link rel="stylesheet" href="util/css/style.css" />
+  </head>
+  <body>
+    <main>
+
+      <div class="container-fluid px-4 py-2">
+        <div class="row gx-1">
+          <div  class="col-md-2 col-12" id="menu">
+            <div class="row opcoes">
+              <div class="col-2">
+                <div class="inicial"><span>E</span></div>
+              </div>
+              <div class="col-2"><button class="bot_hamburguer"><i class="fa fa-bars"></i></button></div>
+              <div class="col-8">
+                <button class="btn_menu"><i class="fas fa-ellipsis-h"></i></button>
+                <button class="btn_menu"><i class="fas fa-right-from-bracket"></i></button>
+              </div>
+            </div>
+            <div class="row cliente">
+              <div class="col-12">Edigar Miguel</div>
+            </div>
+            <div class="row">
+              <nav class="col-12">
+                <ul>
+                  <li><a href="#"><i class="fas fa-globe"></i>Início</a></li>
+                  <li><a href="#"><i class="fas fa-paper-plane"></i>Campanhas</a></li>
+                  <li><a href="#"><i class="fas fa-timeline"></i>Linha do Tempo</a></li>
+                  <li><a href="#"><i class="fas fa-list"></i>Listas</a></li>
+                  <li><a href="#"><i class="fas fa-cog"></i>Configurações</a></li>
+                  <li><a href="#"><i class="fas fa-cube"></i>Módulos</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-12" id="logo">
+                <img src="util/img/logo.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-10 col-12" id="content">
+            <div id="top_content" class="row">
+              <div class="col-10 col-md-3">
+                <button class="bot_hamburguer"><i class="fa fa-bars"></i></button>
+                <div class="input-group">
+                  <input class="form-control py-2 rounded-pill mr-1 pr-5" type="text" placeholder="O que você procura?" id="example-search-input">
+                  <span class="input-group-append">
+                      <button class="btn rounded-pill border-0 ml-n5" type="button">
+                          <i class="fa fa-search"></i>
+                      </button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-2 col-md-9 text-right avisos">
+                <span><i class="fa fa-bell"></i></span>
+              </div>
+            </div>
+
+            <div id="main_content">
+              <div class="row">
+                <div class="col-md-2 col-12 sub_header">
+                  <a href="#"><i class="fa fa-arrow-left-long"></i></a>
+                  <h4><strong>Envio de E-mail:</strong></h4>
+                </div>
+                <div class="col-md-8 col-12 campanha_infos2">
+                  <span>Início:</span> 12/11/22 <span>Final:</span> 12/11/22 <span>Horário:</span> 11:00<span><input type="checkbox" disabled checked> Repetir todos os dias</span>
+                </div>
+                <div class="col-md-2 col-12 text-right">
+                  <div class="opcoes_campanha">
+                    <button class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class='fas fa-ellipsis-h'></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#"><i class="fa fa-edit"></i>Editar Campanha</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-folder-closed"></i>Encerrar Campanha</a>
+                      <a class="dropdown-item" href="#"><i class="fa fa-trash-can"></i>Excluir Campanha</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr/>
+
+              <div class="row campanha_stats">
+                <div class="col-md-6">Início: <span>12/11/22</span></div>
+                <div class="col-md-6 text-right">Fim: <span>12/11/22</span></div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="col-md-12 escala"></div>
+                </div>
+              </div>
+
+              <div class="row grafico_linha">
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                    <!--Alterar o percentual com a conta inline-->
+                    <div class="grafico_ativo" style="width:33.3%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row stats_envio">
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-md-4 col-12">
+                      <i class="fa fa-plane"></i><br>
+                      <strong>19.139</strong><br>
+                      <small>Envios</small>
+                    </div>
+                    <div class="col-md-4 col-12">
+                      <i class="fa fa-envelope-open"></i><br>
+                      <strong>19.139</strong><br>
+                      <small>Abertos</small>
+                    </div>
+                    <div class="col-md-4 col-12">
+                      <i class="fa fa-trash"></i><br>
+                      <strong>19.139</strong><br>
+                      <small>Recusados</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row grid_contatos table-responsive">
+                <div class="col-12">
+                  <table id="datatable2" class="table-striped table" cellspacing=0 cellpadding=0>
+                    <thead>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>Adicionado em: 01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>Adicionado em: 01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>Adicionado em: 01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="util/js/script.js"></script>
+</html>

@@ -69,7 +69,7 @@ main{
 }
 
 #menu nav ul li a{
-  font-size:1vw;
+font-size:14px;
   color:#fff
 }
 
@@ -158,8 +158,10 @@ main{
   border-radius:10px;
   min-height:90vh;
   padding:20px;
+  padding-top:35px;
   width:97%;
   margin-left:2vw;
+  margin-top:35px;
 }
 
 #logo{
@@ -173,7 +175,6 @@ main{
 
 .headers{
   padding-top:35px;
-  padding-bottom:35px;
   padding-left:35px;
   width:100%
 }
@@ -349,8 +350,6 @@ display: flex;
   margin-right:-20px
 }
 
-
-
 .btn_criar_campanha i{
   margin-right:14px;
   font-size:20px;
@@ -525,9 +524,14 @@ font-size:14px;
 .gatilho:hover,.gatilho_ativo,.gatilho_ativo i{
     background-color:#ff7024;
     color:#fff!important;
+    border:1px #ff7024 solid!important;
 }
 .gatilho:hover >i, .gatilho_ativo i{
   color:#fff!important;
+}
+
+.template_selecionado{
+  cursor:pointer;
 }
 
 .gatilho i{
@@ -587,8 +591,6 @@ font-size:14px;
   color:#000!important;
 }
 
-
-
 .form_modal .bot_editar_template,  .form_modal .bot_editar_template:hover{
   border:1px #006fff solid;
   border-radius:10px;
@@ -603,12 +605,16 @@ font-size:14px;
   margin-top:20px;
 }
 
+.form_modal #bloco2{
+  display:none
+}
+
 .template_title .seleciona_template{
   color:#000!important;
   font-size:16px;
 }
 
-/*CAMPANHA*/
+/*  CAMPANHA*/
 .opcoes_campanha{
   float:right;
 }
@@ -622,7 +628,6 @@ font-size:14px;
   background-color:#003698;
   border:0;
   float:right;
-  margin-right:-20px;
 }
 
 .dropdown-menu{
@@ -644,25 +649,226 @@ font-size:14px;
 .dropdown-item i{
   color:#ff676a;
   margin-right:16px;
-  font-size:16px
+  font-size:18px
 }
 
 .dropdown-item:first-child i{
   color:#0270ff
 }
 
+.sub_header a i{
+  display:block;
+  height:60px;
+  font-size:20px;
+  margin-right:31px;
+  float:left;
+  color:#000
+}
+
+.sub_header h4{
+  font-size:16px;
+}
 
 .btn_criar_gatilho{
   border-radius:10px;
-  color:#fff;
+  color:#006fff;
   font-size:16px;
   padding:14px;
-  background-color:red;
+  padding-right:30px!important;
+  padding-left:30px!important;
+  background-color:#fff;
   border:0;
   float:right;
   margin-right:20px;
+  border:1px #006fff solid;
 }
 
+.campanha_stats .col-md-6{
+  font-size:12px;
+}
+
+.campanha_stats span{
+  padding-left:8px;
+  color:#7b7b7b;
+}
+
+hr{
+  border:1px solid #dfdfdf
+}
+
+.escala{
+  height:20px;
+  margin-top:20px;
+  background:url('../img/escala.jpg') repeat-x;
+  margin-bottom:3px;
+}
+
+.grafico_linha .col-md-12 .col-md-12,.grafico_linha_sub{
+  background-color:#f2f2f2;
+  height:6px;
+  border-radius:3px;
+  margin:0!important;
+  padding:0!important;
+}
+
+.grafico_ativo{
+  border-radius:6px;
+  height:6px;
+  background-color:#ff7024;
+  margin:0!important;
+}
+
+.campanha_infos{
+  font-size:16px;
+  margin-top:20px;
+  margin-bottom:29px;
+  color:#7b7b7b;
+}
+
+.campanha_infos2{
+  margin-top:-5px;
+  font-size:14px;
+  color:#7a7a7a;
+}
+
+.campanha_infos2 span{
+  padding-right:14px;
+  color:#000
+}
+
+.campanha_infos2 input[type=checkbox]{
+  margin-left:30px;
+}
+
+.bloquinhos .bloquinhos_item .card{
+  border:1px #e7e7e7 solid;
+  border-radius:11px;
+  padding:20px;
+  min-height:90px;
+  padding-top:25px;
+}
+
+.bloquinhos_item .col-md-8{
+  font-size:0.94vw
+}
+
+.bloquinhos i{
+    font-size:17px!important;
+}
+
+.bloquinhos_item a, .bloquinhos_item i{
+  color:#006fff;
+}
+
+.bloquinhos_item .col-3 a i{
+  padding-top:10px;
+}
+
+.bloquinhos_item .col-md-2{
+  padding:0!important;
+  text-align:center;
+}
+
+.bloquinhos_item .col-md-8 strong{
+  padding-right:20px;
+}
+
+.bloquinhos .fa{
+  font-size:1.5vw;
+}
+
+.bloquinhos_item a{
+  font-size:14px;
+}
+
+.bloquinhos_item:last-child{
+  font-size:0.7vw
+}
+
+.bloquinhos_item .grafico_linha_sub{
+  margin-top:7px!important;
+}
+
+.bloquinhos_item .grafico_ativo{
+  background-color:#006fff!important;
+}
+
+.grid_conteudo{
+  margin-top:30px;
+}
+
+.grid_conteudo h4{
+  font-weight:600;
+  font-size:18px;
+  color:#000
+}
+
+.grid_conteudo #datatable{
+    width:100%!important;
+}
+
+.stats_envio{
+  margin:30px;
+  margin-left:0
+}
+
+.stats_envio .col-md-4{
+  min-height:100px;
+  background:url('../img/bg_stats.png') repeat-y top right;
+}
+
+.stats_envio .col-md-4:last-child{
+  background:none!important;
+}
+
+.stats_envio .col-md-4 i{
+  color:#006fff;
+  font-size:24px;
+}
+
+.stats_envio .col-md-4 strong{
+  font-size:30px;
+  font-weight: 800
+}
+.stats_envio .col-md-4 .fa-trash{
+  color:#ff676a!important;
+}
+
+.stats_envio .col-md-4 small{
+  font-size:12px;
+  color:#006fff;
+}
+
+.cor_verde{
+  color:#01b227;
+}
+
+.cor_vermelho{
+  color:#ff676a
+}
+
+.cor_azul{
+  color:#006fff
+}
+
+.grid_contatos{
+  margin-left:-20px!important;
+  width:100%;
+}
+
+#datatable { border-collapse: separate; border-spacing:0 15px;}
+#datatable tr,#datatable2 tr{margin-bottom:20px!important;}
+#datatable td {border: solid 1px #e7e7e7; padding:22px; font-size:14px}
+#datatable td span{  color:#7b7b7b;}
+#datatable thead tr td{border:none}
+#datatable thead,#datatable2 thead{display:none}
+#datatable tr td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px;border-right:none;text-align:center}
+#datatable tr td:last-child { border-top-right-radius: 10px;border-bottom-right-radius: 10px;border-left:none}
+#datatable tr td:not(:first-child):not(:last-child){border-left:none;border-right:none}
+#datatable .fa-envelope,#datatable .fa-comment-sms, .fa-whatsapp{color:#ff7024;font-size:20px}
+#datatable .fa-arrow-right{font-size:20px;color:#006fff}
+#datatable button{width:46px;height:46px;background-color:#f4f4f4;border:0;border-radius:9px;margin-left:15px;color:#dadada;font-size:26px}
+#datatable2 td, #datatable2 th{padding-top:8px!important;padding-bottom:8px!important;padding-left:10px!important;padding-right:10px!important;border-top:0!important;font-size:14px;}
 @media (max-width: 800px)
 {
   #menu{
@@ -717,6 +923,33 @@ font-size:14px;
     max-width: none!important;
   }
 
+  .bloquinhos_item:last-child{
+    font-size:6.8px
+  }
 
+  .bloquinhos_item a, .bloquinhos_item{
+    margin-bottom:20px;
+  }
 
+  .bloquinhos_item .col-md-8{
+    font-size:12px!important;
+    text-align:center;
+  }
+  .campanha_infos2{
+    text-align:center;
+  }
+  .campanha_infos2 input[type=checkbox]{
+    clear:both;display:block;
+    padding-top:20px;
+  }
+
+  .stats_envio .col-md-4{
+    background:none!important;
+    border:1px #f1f1f1 solid;
+    margin-left:20px;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+  }
 }

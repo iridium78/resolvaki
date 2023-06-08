@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,167 +15,6 @@
   </head>
   <body>
     <main>
-      <!--MODAL GATILHO-->
-      <div class="modal fade" id="modal_gatilho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Nova Gatilho
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p></h5>
-
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <i class="fa fa-times"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="form_modal">
-              <div id="bloco1">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="gatilho gatilho_ativo" rel="1"><i class="far fa-envelope"></i><br>E-Mail</div>
-                    <div class="gatilho" rel="2"><i class="far fa-comment-dots"></i><br>SMS</div>
-                    <div class="gatilho" rel="3"><i class="fab fa-whatsapp"></i><br>WhatsApp</div>
-                    <input type="hidden" name="tipo_gatilho" id="tipo_gatilho" value=1>
-                  </div>
-                </div>
-
-                <div class="row" style="margin-top:30px">
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Nome da Campanha</label>
-                      <input type="text" class="form-control" >
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Data de Início</label>
-                      <input type="text" class="form-control" >
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Data de Término</label>
-                      <input type="text" class="form-control" >
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Hora de Início</label>
-                      <input type="text" class="form-control" >
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Hora de Término</label>
-                      <input type="text" class="form-control" >
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">Repetir diariamente </label>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <div class="template_selecionado">
-                      Selecione o Template
-                    </div>
-                    <input type="hidden" name="template" id="template">
-                  </div>
-                </div>
-              </div>
-
-
-              <div id="bloco2">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Buscar Template</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row templates">
-                  <!--TEMPLATE ITEM-->
-                  <div class="col-md-12 template_item">
-                    <div class="row template_title">
-                      <div class="col-md-9"><a href="javascript:;" class='seleciona_template' rel="111"> SMS com link para boleto 111</a></div>
-                      <div class="col-md-3 text-right"><a href="#" class="ver_template" rel="template_111">Ver Template</a></div>
-                    </div>
-                  </div>
-                  <!--TEMPLATE CONTENT-->
-                  <div class="row template_content" id="template_111">
-                    <div class="col-12">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    <br><a href="#">Duis aute irure dolor in</a>
-                      <a class="bot_editar_template">Editar Template</a>
-                    </div>
-                  </div>
-
-                  <!--TEMPLATE ITEM-->
-                  <div class="col-md-12 template_item">
-                    <div class="row template_title">
-                      <div class="col-md-9"><a href="javascript:;" class='seleciona_template' rel="222"> SMS com link para boleto 222</a></div>
-                      <div class="col-md-3 text-right"><a href="#" class="ver_template" rel="template_222">Ver Template</a></div>
-                    </div>
-                  </div>
-                  <!--TEMPLATE CONTENT-->
-                  <div class="row template_content" id="template_222">
-                    <div class="col-12">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    <br><a href="#">Duis aute irure dolor in</a>
-                      <a class="bot_editar_template">Editar Template</a>
-                    </div>
-                  </div>
-
-
-
-                  <!--TEMPLATE ITEM-->
-                  <div class="col-md-12 template_item">
-                    <div class="row template_title">
-                      <div class="col-md-9"><a href="javascript:;" class='seleciona_template' rel="333"> SMS com link para boleto 333</a></div>
-                      <div class="col-md-3 text-right"><a href="#" class="ver_template" rel="template_333">Ver Template</a></div>
-                    </div>
-                  </div>
-                  <!--TEMPLATE CONTENT-->
-                  <div class="row template_content" id="template_333">
-                    <div class="col-12">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    <br><a href="#">Duis aute irure dolor in</a>
-                      <a class="bot_editar_template">Editar Template</a>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <div class="row">
-              <div class="col-md-3">
-                <button type="button" class="btn_cancelar" data-dismiss="modal">Cancelar</button>
-              </div>
-              <div class="col-md-9 text-right">
-                <button type="button" class="btn_salvar_criar">Salvar</button>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-
-      </div>
-
-
       <!--MODAL CAMPANHA-->
       <div class="modal fade" id="modal_campanha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -313,7 +152,6 @@
                 <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <h3>
               </div>
               <div class="col-md-5 col-12 text-right">
-                <button class="btn_criar_gatilho" data-toggle="modal" data-target="#modal_gatilho"><i class="fa fa-times"></i></button>
                 <button class="btn_criar_campanha" data-toggle="modal" data-target="#modal_campanha"><i class="fa fa-plus"></i>Criar Nova Campanha</button>
               </div>
             </div>
