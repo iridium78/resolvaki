@@ -971,3 +971,9 @@ hr{
   background-color: #f5f5f5!important;
   border-radius: 11px!important;
 }
+
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+  color : #006fff!important;
+  opacity: 1 !important;
+}
