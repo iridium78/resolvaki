@@ -45,4 +45,10 @@ $(document).ready(function () {
       $("#bloco2").hide();
     }
   })
+
+  var table = new DataTable('#datatable2', {
+      language: {
+          url: '//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-BR.json',
+      },
+  });
 });

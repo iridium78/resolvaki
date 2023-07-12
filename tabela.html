@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" href="util/css/style.css" />
   </head>
   <body>
@@ -141,19 +142,19 @@
                   <table id="datatable2" class="table-striped table" cellspacing=0 cellpadding=0>
                     <thead>
                         <tr>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
+                          <th>Cliente</th>
+                          <th>E-mail</th>
+                          <th>Adicionado em:</th>
+                          <th>Email</th>
+                          <th>WhatsApp</th>
+                          <th>SMS</th>
                         </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>Abigail Gonçalves Soares</td>
                         <td>abigarez@gmail.com</td>
-                        <td>Adicionado em: 01/06/22</td>
+                        <td> 01/06/22</td>
                         <td class="cor_azul">Enviado</td>
                         <td class="cor_verde">Recebido</td>
                         <td class="cor_vermelho">Recusado</td>
@@ -161,7 +162,7 @@
                       <tr>
                         <td>Abigail Gonçalves Soares</td>
                         <td>abigarez@gmail.com</td>
-                        <td>Adicionado em: 01/06/22</td>
+                        <td>02/06/22</td>
                         <td class="cor_azul">Enviado</td>
                         <td class="cor_verde">Recebido</td>
                         <td class="cor_vermelho">Recusado</td>
@@ -169,7 +170,127 @@
                       <tr>
                         <td>Abigail Gonçalves Soares</td>
                         <td>abigarez@gmail.com</td>
-                        <td>Adicionado em: 01/06/22</td>
+                        <td>03/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>06/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
+                        <td class="cor_azul">Enviado</td>
+                        <td class="cor_verde">Recebido</td>
+                        <td class="cor_vermelho">Recusado</td>
+                      </tr>
+                      <tr>
+                        <td>Abigail Gonçalves Soares</td>
+                        <td>abigarez@gmail.com</td>
+                        <td>01/06/22</td>
                         <td class="cor_azul">Enviado</td>
                         <td class="cor_verde">Recebido</td>
                         <td class="cor_vermelho">Recusado</td>
